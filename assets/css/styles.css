@@ -1,0 +1,178 @@
+body {
+    background-image: url('../../assets/img/bg1-relevo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+    color: azure !important;
+}
+
+.bg-dark .navbar {
+    --bs-navbar-color: #ccc !important;
+}
+
+button span {
+    text-align: center;
+}
+
+button a:hover {
+    color: azure;
+}
+
+button a {
+    color: azure;
+    text-decoration: none;
+}
+
+button span {
+    text-align: center;
+}
+
+section#home .photo>img {
+    border-radius: 250px;
+    box-shadow: 0 0 62px -1px #ccc;
+    opacity: 0.9;
+}
+
+section#home {
+    font-size: 3rem;
+}
+
+section#home .photo>img:hover {
+    transform: scale(1.021);
+    opacity: 1;
+}
+
+.description {
+    text-align: justify;
+}
+
+
+/* .about-info {
+    font-size: 4rem;
+} */
+
+.social button {
+    width: 13%;
+    margin: .5rem;
+    height: 3rem;
+}
+
+.social button img {
+    width: 2rem;
+}
+
+.myName {
+    font-size: 5rem;
+}
+
+p.title {
+    font-size: 5rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #000
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.tl-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.tl-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #2d7ac7;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: -0.45%;
+}
+
+.right {
+    left: 50.45%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .tl-container {
+        width: 50%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .tl-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+    .right {
+        left: 0%;
+    }
+}
