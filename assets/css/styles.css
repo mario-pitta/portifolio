@@ -153,6 +153,25 @@ p.title {
     border-radius: 6px;
 }
 
+.carousel-img {
+    height: 450px;
+}
+
+.hard-skills-div {
+    top: 13rem;
+    left: 34rem;
+}
+
+.skill-logo {
+    width: 35px;
+    margin: 10px;
+}
+
+.skill-logo:hover {
+    width: 45px;
+    margin: 3px
+}
+
 @media screen and (max-width: 600px) {
     .timeline::after {
         left: 31px;
