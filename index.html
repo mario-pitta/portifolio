@@ -6,55 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Mario Pitta</title>
 </head>
 
 <body class="bg-dark">
-    <nav class="navbar fixed-top navbar-expand-lg bg-dark">
-        <div class="m-2 d-flex justify-content-between">
-            <div>
-                <a class="navbar-brand text-light" href="#home">Mario Pitta</a>
+    <section id="header">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+            <div class="m-2 d-flex justify-content-between">
+                <div>
+                    <a class="navbar-brand text-light" href="#home">Mario Pitta</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiences">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </d>
+                </div>
+                <div class="container-fluid position-relative">
+                    <button class="navbar-toggler btn-collapsed-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiences">Experiences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                </d>
-            </div>
-            <div class="container-fluid ">
-                <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarTogglerDemo01 " aria-controls="navbarTogglerDemo01 " aria-expanded="false " aria-label="Toggle navigation ">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
     <br><br>
     <section id="home" class="container mt-5 p-3">
         <div class="p-5 m-5 mt-3 mb-0 d-flex justify-content-center align-items-center">
             <div class="col-6 home">
-                <span>Hi, i'm</span>
-                <p clas="myname"><strong>Mario Pitta.</strong></p>
+                <span>Hi, i'm
+                    <p class="myname"><strong>Mario Pitta.</strong></p>
+                </span>
                 <span class="element"></span>
             </div>
             <div class="col-6 photo">
@@ -84,7 +87,7 @@
             <div class="col-6 about-info">
                 <p class="title"><strong>About Me</strong></p>
             </div>
-            <div class="col-6 description float-end ">
+            <div class="col-6 description float-end">
                 <p>31 years old, in a 10 year relationship and father of two adorable children. Develop solutions to old and new problems. That's my passion. With more than 6 years on the road as a developer, I had the opportunity to face the most diverse
                     difficulties with the most different languages, which enabled me to choose, in fact, which path to follow. I opted for FrontEnd, focusing on Angular and typescript, to begin with. Today, I master besides Angular, Ionic and I do well
                     with React and React Native. I learned backend with NodeJS and Express in addition to NestJS recently. DevOps is the next journey, already having some knowledge because of my curiosity.</p>
@@ -94,33 +97,42 @@
     </section>
 
 
-    <section id="skills" class="container mt-5 p-3 ">
+    <section id="skills" class="container mt-5 p-3">
         <div class="p-5 m-5 d-flex justify-content-center align-items-center">
             <div class="col-6 description">
                 <p>Develop solutions to old and new problems. That's my passion. With more than 6 years on the road as a developer, I had the opportunity to face the most diverse difficulties with the most different languages, which enabled me to choose,
                     in fact, which path to follow. I opted for FrontEnd, focusing on Angular and typescript, to begin with. Today, I master besides Angular, Ionic and I do well with React and React Native. I learned backend with NodeJS and Express in
-                    addition to NestJS recently. DevOps is the next journey, already having some knowledge because of my curiosity.</p>
+                    addition to NestJS recently. DevOps is the next journey, already having some knowledge because of my curiosity.
+                </p>
             </div>
-            <div class="col-6  float-end align-items-center position-relative" style="margin-left: 3rem;">
+            <div class="col-6 float-end align-items-center position-relative" style="margin-left: 3rem;">
                 <p class="title"><strong>Hard Skills</strong></p>
                 <div class="hard-skills-div">
                     <div class="d-flex justify-content-between">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="HTML 5" aria-label="HTML 5">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="CSS" aria-label="CSS">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="JavaScript" aria-label="JavaScript">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="ANGULAR" aria-label="ANGULAR">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/ionic/ionic-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="IONIC" aria-label="IONIC">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="ANGULAR
+                   " aria-label="ANGULAR">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/ionic/ionic-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="IONIC
+                   " aria-label="IONIC">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="BOOTSTRAP" aria-label="BOOTSTRAP">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="TypeScript" aria-label="TypeScript">
                     </div>
                     <div class="d-flex justify-content-between">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="MySQL" aria-label="MySQL">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="MySQL
+                   " aria-label="MySQL">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="FIGMA" aria-label="FIGMA">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="POSTGRESQL" aria-label="POSTGRESQL">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sqlite/sqlite-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="SQLITE" aria-label="SQLITE">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="AWS" aria-label="AWS">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="NODE" aria-label="NODE">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="DOCKER" aria-label="DOCKER">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="POSTGRESQL
+                   " aria-label="POSTGRESQL">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sqlite/sqlite-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="SQLITE
+                   " aria-label="SQLITE">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" class="skill-logo" data-toggle="tooltip
+                   " data-placement="top" title="AWS" aria-label="AWS">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="NODE
+                   " aria-label="NODE">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="DOCKER
+                   " aria-label="DOCKER">
                     </div>
                 </div>
 
@@ -136,7 +148,8 @@
                     <h2>2021 ~~~</h2>
                     <p><strong>SOLOS Brasil</strong></p>
                     <p><strong>Área de atuação:</strong> Techlead Angular + Dev Pleno Angular</p>
-                    <p><strong>Funções De Liderança:</strong> TeamLeader Frontend (JS, TS, Angular, Ionic), ScrumMaster.</p>
+                    <p><strong>Funções De Liderança:</strong> TeamLeader Frontend (JS, TS, Angular, Ionic), ScrumMaster.
+                    </p>
                     <p><strong>Atividades:</strong> Desenvolver produtos de gestão pública e cadastros de cidadãos, assim como o acompanhamento das solicitações do cidadão e análise pelos servidores. Planejar estratégias de desenvolvimento, buscando a melhor
                         maneira de implementar as soluções dos problemas que surgiam desenhando ERDs e protótipos dos produtos a serem implementados, assim como orientar os mais novos do time nas suas dificuldades com o mundo da programação, e/ou com
                         os frameworks que usamos. Gerenciamento das histórias e tasks das sprints, além de relatórios sobre o andamento e produtividade do time no decorrer das sprints.
@@ -252,10 +265,12 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="carousel-img d-block w-100" src="https://images.unsplash.com/photo-1573166918385-7d4308892300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="Second slide">
+                        <img class="carousel-img d-block w-100" src="./assets/img/henrique-do-sax screen.png" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
+                            <h5>Henrique Do Sax</h5>
+                            <p>Portifólio de um músico saxofonista.</p>
+                            <a class="btn btn-warning" href="https://henrique-do-sax.vercel.app/" target="_blank">View Demo</a>
+                            <a class="btn btn-light" disabled>Source Code</a>
                         </div>
                     </div>
                     <div class="carousel-item">

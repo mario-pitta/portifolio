@@ -154,7 +154,7 @@ p.title {
 }
 
 .carousel-img {
-    height: 450px;
+    height: 500px;
 }
 
 .hard-skills-div {
@@ -173,6 +173,13 @@ p.title {
 }
 
 @media screen and (max-width: 600px) {
+    .home>span {
+        font-size: 1rem;
+    }
+    .home>span.element {
+        font-size: 1.5rem;
+    }
+    .photo>img {}
     .timeline::after {
         left: 31px;
     }
@@ -193,5 +200,18 @@ p.title {
     }
     .right {
         left: 0%;
+    }
+    .collapse:not(.show) {
+        display: none;
+        position: absolute;
+        right: 12rem;
+        top: 2rem;
+        background-color: #212529;
+        width: 20%;
+        padding: 0.5rem;
+    }
+    .btn-collapsed-menu {
+        position: absolute;
+        right: -16rem;
     }
 }
