@@ -6,140 +6,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UfG/ZH4llFWOvx4tT8qc7p5Uefk6J2FdJQ+SinUC20RlAuWdyLyJcAxvWFrmJXp" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Mario Pitta</title>
 </head>
 
 <body class="bg-dark">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <section id="header">
         <nav class="navbar fixed-top navbar-expand-lg bg-dark">
-            <div class="m-2 d-flex justify-content-between">
+            <div class="m-2 d-flex justify-content-between w-100">
                 <div>
                     <a class="navbar-brand text-light" href="#home">Mario Pitta</a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiences">Experiences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    </d>
-                </div>
-                <div class="container-fluid position-relative">
-                    <button class="navbar-toggler btn-collapsed-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div>
+
+                    <div id="navMenu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiences">Experiences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="container-fluid">
+                        <button class="navbar-toggler btn-collapsed-menu" id="btnCollapseNavMenu" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
+
         </nav>
     </section>
     <br><br>
+
+
+
     <section id="home" class="container mt-5 p-3">
-        <div class="p-5 m-5 mt-3 mb-0 d-flex justify-content-center align-items-center">
-            <div class="col-6 home">
-                <span>Hi, i'm
-                    <p class="myname"><strong>Mario Pitta.</strong></p>
-                </span>
-                <span class="element"></span>
-            </div>
-            <div class="col-6 photo">
-                <img src="assets/img/me.jpeg">
-            </div>
+        <div class="info m-5 mt-3 mb-3 align-items-center">
+            <ul class="info-list p-2 d-flex justify-content-between w-100">
+                <li class="reverse-list">
+                    <div class="justify-content-center">
+                        <ul>
+                            <li>
+                                <p class="myname">
+                                    <span>Hi, i'm</span>
+                                    <strong>Mario Pitta.</strong>
+                                </p>
+
+                            </li>
+                            <li>
+                                <span class="element"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                        <img alt="Mario Pitta's photo" src="assets/img/me.jpeg">
+                    </div>
+                </li>
+
+
+            </ul>
+
         </div>
-        <div class="d-flex m-3 justify-content-center mt-0 social">
-            <button class="btn btn-dark align-items-center d-flex">
-                <a href="https://github.com/mario-pitta">
-                    <img src="assets/img/github-icon.png" alt="github-icon">
-                    <span class="text-center">GITHUB</span>
-                </a>
-            </button>
-            <button class="btn btn-primary align-items-center d-flex">
-                <a href="https://www.linkedin.com/in/mario-pitta-7915b114b/">
-                    <img src="assets/img/linkedin-icon.png" alt="github-icon">
-                    <span class="text-center">LINKEDIN</span>
-                </a>
-            </button>
-        </div>
-    </section>
-
-
-    <br><br>
-    <section id="about" class="container mt-5 p-3">
-        <div class="p-5 m-5 d-flex justify-content-center align-items-center">
-            <div class="col-6 about-info">
-                <p class="title"><strong>About Me</strong></p>
-            </div>
-            <div class="col-6 description float-end">
-                <p>31 years old, in a 10 year relationship and father of two adorable children. Develop solutions to old and new problems. That's my passion. With more than 6 years on the road as a developer, I had the opportunity to face the most diverse
-                    difficulties with the most different languages, which enabled me to choose, in fact, which path to follow. I opted for FrontEnd, focusing on Angular and typescript, to begin with. Today, I master besides Angular, Ionic and I do well
-                    with React and React Native. I learned backend with NodeJS and Express in addition to NestJS recently. DevOps is the next journey, already having some knowledge because of my curiosity.</p>
-            </div>
-
+        <div class="d-flex float-end mar gap-2 justify-content-center mt-0 social">
+            <a href="https://github.com/mario-pitta">
+                <img class="icon" src="assets/img/github-icon.png" alt="github-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/mario-pitta-7915b114b/">
+                <img class="icon" src="assets/img/linkedin-icon.png" alt="github-icon">
+            </a>
         </div>
     </section>
 
 
-    <section id="skills" class="container mt-5 p-3">
-        <div class="p-5 m-5 d-flex justify-content-center align-items-center">
-            <div class="col-6 description">
-                <p>Develop solutions to old and new problems. That's my passion. With more than 6 years on the road as a developer, I had the opportunity to face the most diverse difficulties with the most different languages, which enabled me to choose,
+    <section id="about" class="container mt-3">
+
+        <div class="about-info">
+            <p class="title"><strong>About Me</strong></p>
+        </div>
+        <div class="description">
+            <p>31 years old, in a 10 year relationship and father of two adorable children. Develop solutions to old and new problems. That's my passion. With more than 6 years on the road as a developer, I had the opportunity to face the most diverse difficulties
+                with the most different languages, which enabled me to choose, in fact, which path to follow. I opted for FrontEnd, focusing on Angular and typescript, to begin with. Today, I master besides Angular, Ionic and I do well with React and
+                React Native. I learned backend with NodeJS and Express in addition to NestJS recently. DevOps is the next journey, already having some knowledge because of my curiosity.</p>
+        </div>
+
+
+    </section>
+
+
+    <section id="skills" class="container mt-5 ">
+        <ul class="reverse-list">
+            <li>
+                <p class="description">Develop solutions to old and new problems. That's my passion. With more than 6 years on the road as a developer, I had the opportunity to face the most diverse difficulties with the most different languages, which enabled me to choose,
                     in fact, which path to follow. I opted for FrontEnd, focusing on Angular and typescript, to begin with. Today, I master besides Angular, Ionic and I do well with React and React Native. I learned backend with NodeJS and Express in
                     addition to NestJS recently. DevOps is the next journey, already having some knowledge because of my curiosity.
                 </p>
-            </div>
-            <div class="col-6 float-end align-items-center position-relative" style="margin-left: 3rem;">
+            </li>
+            <li>
                 <p class="title"><strong>Hard Skills</strong></p>
-                <div class="hard-skills-div">
-                    <div class="d-flex justify-content-between">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="HTML 5" aria-label="HTML 5">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="CSS" aria-label="CSS">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="JavaScript" aria-label="JavaScript">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="ANGULAR
-                   " aria-label="ANGULAR">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/ionic/ionic-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="IONIC
-                   " aria-label="IONIC">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="BOOTSTRAP" aria-label="BOOTSTRAP">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="TypeScript" aria-label="TypeScript">
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="MySQL
-                   " aria-label="MySQL">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="FIGMA" aria-label="FIGMA">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="POSTGRESQL
-                   " aria-label="POSTGRESQL">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sqlite/sqlite-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="SQLITE
-                   " aria-label="SQLITE">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" class="skill-logo" data-toggle="tooltip
-                   " data-placement="top" title="AWS" aria-label="AWS">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="NODE
-                   " aria-label="NODE">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="DOCKER
-                   " aria-label="DOCKER">
-                    </div>
-                </div>
-
+            </li>
+        </ul>
+        <div class="hard-skills-div">
+            <div class="p-3 row d-flex justify-content-around">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="HTML 5" aria-label="HTML 5">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="CSS" aria-label="CSS">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="JavaScript" aria-label="JavaScript">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/angularjs/angularjs-plain.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="ANGULAR
+           " aria-label="ANGULAR">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/ionic/ionic-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="IONIC
+           " aria-label="IONIC">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="BOOTSTRAP" aria-label="BOOTSTRAP">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="TypeScript" aria-label="TypeScript">
+                <!-- </div>
+            <div class="p-0 d-flex justify-content-between"> -->
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="MySQL
+           " aria-label="MySQL">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="FIGMA" aria-label="FIGMA">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="POSTGRESQL
+           " aria-label="POSTGRESQL">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sqlite/sqlite-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="SQLITE
+           " aria-label="SQLITE">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="AWS" aria-label="AWS">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="NODE
+           " aria-label="NODE">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original.svg" alt="" class="skill-logo" data-toggle="tooltip" data-placement="top" title="DOCKER
+           " aria-label="DOCKER">
             </div>
+        </div>
     </section>
 
-    <section id="experiences" class="container mt-5 p-5">
+    <section id="experiences" class="container mt-5 p-3">
         <p class="title"><strong>Experiences</strong></p>
 
         <div class="timeline">
@@ -219,6 +241,7 @@
                         e manutenção na arquitetura de servidores.
                         <p><strong>Principais Linguagens:</strong> HTML, PHP, JavaScript e SQL.</p>
                     </p>
+                    <p><strong>Frameworks:</strong> VueJS</p>
                 </div>
             </div>
 
@@ -229,11 +252,9 @@
         </div>
     </section>
 
-
     <section id="projects" class="container mt-5 p-5">
         <div class="col-12">
             <p class="title center"><strong>Projects</strong></p>
-
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -269,15 +290,16 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Henrique Do Sax</h5>
                             <p>Portifólio de um músico saxofonista.</p>
-                            <a class="btn btn-warning" href="https://henrique-do-sax.vercel.app/" target="_blank">View Demo</a>
+                            <a class="btn btn-warning" href="https://henrique-do-sax.vercel.app/" target="_blank">View
+                                Demo</a>
                             <a class="btn btn-light" disabled>Source Code</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="carousel-img d-block w-100" src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
+                            <h5>Em construção</h5>
+                            <p>Logo mais teremos novidades...</p>
                         </div>
                     </div>
                 </div>
@@ -292,13 +314,125 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <section id="contact" class="p-5 m-2">
+        <div class="about-info">
+            <p class="title"><strong>Contact Me</strong></p>
+        </div>
+        <form>
+
+
+            <div class="form-group row">
+                <div class="col-6">
+
+                    <label for="name" class="form-label">Your name:</label><span class="text-danger">*</span>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="How want you be called?">
+                </div>
+
+                <div class="col-6">
+                    <label for="email" class="form-label">Your email:</label><span class="text-danger">*</span>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Type yout best email">
+                </div>
+
+                <div class="col-12 mt-3">
+                    <label for="content" class="form-label">Talk with me...</label><span class="text-danger">*</span>
+                    <textarea name="content" id="content" cols="30" rows="10" class="form-control" placeholder="Please, tell me how can i help you!"></textarea>
+                </div>
+            </div>
+        </form>
+        <button class="btn btn-primary w-100 mt-3 mb-2" id="sendBtn" onclick="sendEmail()" [disabled]="!validMessage()">Send message</button>
+
+        <div class="contact-footer m-3">
+            <label for="name" class="form-label">Or send me a direct message via:</label>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.instagram.com/mj_pitta/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+                <a href="https://wa.me/5571985263173/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mario-pitta-7915b114b/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <div class="d-flex justify-content-center  mb-5">
+            <span class="text-muted text-sm">Designed by Mario Pitta with </span><span class="animate-pulsing">❤</span><span class="text-muted text-sm"> - 2023</span>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        (function() {
+            emailjs.init(epk);
+        })();
+
+        function sendEmail() {
+
+            const epk = 'dAsIK_gmmgh7aL_Hg'
+            const es_id = 'service_7h09pen'
+            const et_id = 'template_w0ny10r'
+
+            const form = document.querySelector('form');
+
+            const sendBtn = document.getElementById("sendBtn")
+
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const content = document.getElementById('content').value;
+
+            let isValid = (name && email && content)
+
+            if (isValid) {
+                sendBtn.setAttribute('disabled', true)
+                emailjs.send(es_id, et_id, {
+                        from_name: name,
+                        to_name: "Pitta",
+                        message: content,
+                        reply_to: email,
+                    }, epk).then(r => {
+                        alert('Your message was sent. Thank You!')
+                        sendBtn.setAttribute('disabled', false)
+                        return r
+                    })
+                    // .catch(err => {
+                    //     alert('Something was wrong, please try again later.')
+                    //     sendBtn.setAttribute('disabled', false)
+                    // })
+            } else {
+                alert('Please, complete all form before send me a message.')
+
+            }
+
+
+        }
+    </script>
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 
 <script src="./assets/js/index.js"></script>
 <!-- <script src="./assets/js/pixi.js"></script> -->
 <script src="./assets/js/typed.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
