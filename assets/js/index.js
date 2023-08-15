@@ -3,8 +3,12 @@ function alertar() {
 }
 
 $(function() {
-    $('[data-toggle="tooltip"]').tooltip()
-})
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    // $(function() {
+    //     $('.carousel').carousel();
+    // })
+
 
 
 const btn = document.getElementById('btnCollapseNavMenu');
